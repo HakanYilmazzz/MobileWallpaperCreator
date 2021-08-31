@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mobile Wallpaper Creator</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"
+    integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+  <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet"
+    type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.3.2/dist/html2canvas.min.js"></script>
+    <script src="https://unpkg.com/leaflet-simple-map-screenshoter@0.4.5/dist/leaflet-simple-map-screenshoter.js"></script>
+  <link rel="stylesheet" href="./Css/map.css">
+</head>
+
+<body>
+  <div id="app">
+    <span class="link"><a href="https://github.com/HakanYilmazzz" target="_blank">Hakan YILMAZ</a></span>
+    <div class="left">
+      <h1>Arka planını tasarla</h1>
+      <span style="font-size: 20px;">Konum seç:</span> <br> <br>
+      <div class="wrap">
+        <div class="search">
+          <input type="text" class="searchTerm" id="sehir" placeholder="Şehir Ara">
+          <button type="submit" class="searchButton" onclick="sehirAra()">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+      <span style="font-size: 16px;">Harita Rengi </span>
+      <div class="MapStyleSelect">
+        <div class="dark MapStyleSelectItem--selected" onclick="dark()" style="background: rgb(0, 0, 0);"></div>
+        <div class="light " onclick="light()" style="background: rgb(221, 221, 221);"></div>
+      </div>
+      <h5 style="display: flex;position: absolute;bottom: 0;left: 1%;font-size: .8rem;">* Harita üzerindeki kamera simgesine tıklayarak resim olarak indirebilirsin</span>
+    </div>
+
+    <div class="right">
+      <h2 id="city">Öncelikle bir şehir seçin</h2>
+      <div id="map"></div>
+    </div>
+  </div>
+
+</body>
+
+<script type='text/javascript' src='./JS/leaf-demo.js'></script>
+<script>
+  function dark() {
+    $(".dark").attr("class", "dark MapStyleSelectItem--selected");
+    $(".light").attr("class", "light");
+    
+    sehirAra()
+  }
+
+  function light() {
+    $(".light").attr("class", "light MapStyleSelectItem--selected");
+    $(".dark").attr("class", "dark");
+    $
+    sehirAra()
+  }
+  
+</script>
+
+</html>
