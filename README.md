@@ -5,6 +5,7 @@ Seçtiğiniz şehirin haritasını resim olarak telefonunuza indirip arkaplan ya
 - Telefon seçimi eklenip özel boyutlarda indirme sağlanacak.
 - Dark mMap ekran görüntüsü alamama sorunu düzeltilecek.
 - Bazı illerde konumlandırma sıkıntısı çözülecek.
+- Daha fazla tema seçeneği eklenecek.
 
 # Ekran Görüntüsü
 Koyu Harita
