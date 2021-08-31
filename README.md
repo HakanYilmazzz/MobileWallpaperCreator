@@ -2,8 +2,9 @@
 Seçtiğiniz şehirin haritasını resim olarak telefonunuza indirip arkaplan yapmanıza yarar  &#9745;
 
 # Yapılacaklar
-- Telefon seçimi eklenip ona özel boyutlarda indirme sağlanacak.
-- Dark map ekran görüntüsü alamama sorunu düzeltilecek.
+- Telefon seçimi eklenip özel boyutlarda indirme sağlanacak.
+- Dark mMap ekran görüntüsü alamama sorunu düzeltilecek.
+- Bazı illerde konumlandırma sıkıntısı çözülecek.
 
 # Ekran Görüntüsü
 Koyu Harita
