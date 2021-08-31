@@ -1,5 +1,3 @@
-var counter=0;
-
 function sehirAra() {
    var map= null;
    
