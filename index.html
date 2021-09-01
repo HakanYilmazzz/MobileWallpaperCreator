@@ -25,7 +25,7 @@
     <span class="link"><a href="https://github.com/HakanYilmazzz" target="_blank">Hakan YILMAZ</a></span>
     <div class="left">
       <h1>Arka planını tasarla</h1>
-      <span style="font-size: 20px;">Konum seç:</span> <br> <br>
+      <span style="font-size: 20px;color:white">Konum seç:</span> <br> <br>
       <div class="wrap">
         <div class="search">
           <input type="text" class="searchTerm" id="sehir" placeholder="Şehir Ara">
@@ -39,7 +39,7 @@
         <div class="dark MapStyleSelectItem--selected" onclick="dark()" style="background: rgb(0, 0, 0);"></div>
         <div class="light " onclick="light()" style="background: rgb(221, 221, 221);"></div>
       </div>
-      <h5 style="display: flex;position: absolute;bottom: 0;left: 1%;font-size: .8rem;">* Harita üzerindeki kamera simgesine tıklayarak resim olarak indirebilirsin</span>
+      <h5 style="display: flex;position: absolute;bottom: 0;left: 1%;font-size: .7rem;color:white">* Harita üzerindeki kamera simgesine tıklayarak resim olarak indirebilirsin</span>
     </div>
 
     <div class="right">
@@ -55,14 +55,22 @@
   function dark() {
     $(".dark").attr("class", "dark MapStyleSelectItem--selected");
     $(".light").attr("class", "light");
-    
+    $(".left").css("background-color","#5b8e7d");
+    $(".left").css("border-top","4px solid #ffa31a");
+    $("span").css("color","white")
+    $("h1").css("color","white")
+    $("h5").css("color","white")
     sehirAra()
   }
 
   function light() {
     $(".light").attr("class", "light MapStyleSelectItem--selected");
     $(".dark").attr("class", "dark");
-    $
+    $(".left").css("background-color","white");
+    $(".left").css("border-top","4px solid #339dff");
+    $("span").css("color","black")
+    $("h1").css("color","#349dff")
+    $("h5").css("color","black")
     sehirAra()
   }
   

@@ -41,7 +41,11 @@ function sehirAra() {
             ext: 'png'
           }
         ).addTo(map);
-        L.simpleMapScreenshoter().addTo(map);
+        L.simpleMapScreenshoter({
+          screenName: function () {
+              return data[1].display_name.split(",")[0]
+          }
+      }).addTo(map);
       }
      
       document.getElementById("city").innerHTML = data[1].display_name.split(",")[0];
