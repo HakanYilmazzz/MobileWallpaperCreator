@@ -34,6 +34,11 @@ function sehirAra() {
             accessToken: 'tpY0Y89pHDvfSJMVpDqT6LVIFxHERBI9s5HkDLealpldriuG0HkohVjvXbtFNqkz'
           }
         ).addTo(map);
+        L.simpleMapScreenshoter({
+          screenName: function () {
+              return data[1].display_name.split(",")[0]+"Dark"
+          }
+      }).addTo(map);
       }else{
         L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',
           {
@@ -43,7 +48,7 @@ function sehirAra() {
         ).addTo(map);
         L.simpleMapScreenshoter({
           screenName: function () {
-              return data[1].display_name.split(",")[0]
+              return data[1].display_name.split(",")[0]+"Light"
           }
       }).addTo(map);
       }
