@@ -3,7 +3,7 @@ Seçtiğiniz şehirin haritasını resim olarak telefonunuza indirip arkaplan ya
 
 # Yapılacaklar
 - Telefon seçimi eklenip özel boyutlarda indirme sağlanacak.
-- Dark mMap ekran görüntüsü alamama sorunu düzeltilecek.
+- Dark mMap ekran görüntüsü alamama sorunu düzeltilecek.  :heavy_check_mark:
 - Bazı illerde konumlandırma sıkıntısı çözülecek.
 - Daha fazla tema seçeneği eklenecek.
 
